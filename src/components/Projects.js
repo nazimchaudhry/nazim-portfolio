@@ -2,9 +2,9 @@ import React from 'react';
 
 function Projects() {
   const projectList = [
-    { name: 'Curax', description: 'A microservice-based healthcare system', link: 'https://github.com/mdasad8080' },
-    { name: 'DMW', description: 'Manufacturing and regulatory application', link: 'https://github.com/mdasad8080' },
-    { name: 'TeamLancer', description: 'Team-based freelancing platform application', link: 'https://github.com/mdasad8080' },
+    { name: 'DMW', description: 'DMW is a Healthcare App to various stakeholders including manufacturers, medical companies, innovators, HR personnel, doctors and patients.', link: 'https://github.com/mdasad8080' },
+    { name: 'Team Sofyrus', description: 'Team Sofyrus (teams.sofyrus.com), a hiring platform designed to provide teams for various projects, similar to a freelance platform.', link: 'https://github.com/mdasad8080' },
+    { name: 'Food Recipe App', description: 'Discover a world of flavors with our Food Recipe App, featuring endless dishes for every taste and occasion a variety of meals, all in one app.', link: 'https://github.com/mdasad8080' },
   ];
 
   return (
@@ -43,7 +43,7 @@ function Projects() {
             fontSize: '3rem',
             fontWeight: 'bold',
             marginBottom: '40px',
-            color: '#ff6f61',
+            color: '#608BC1',
             textShadow: '2px 2px 5px rgba(0, 0, 0, 0.8), 3px 3px 10px rgba(255, 255, 255, 0.4)', 
             fontFamily: "'Raleway', sans-serif", 
           }}
@@ -87,7 +87,7 @@ function Projects() {
                 style={{
                   fontSize: '1.7rem',
                   marginBottom: '10px',
-                  color: '#ff6f61',
+                  color: '#608BC1',
                 }}
               >
                 {project.name}
@@ -99,22 +99,22 @@ function Projects() {
                 rel="noopener noreferrer"
                 style={{
                   
-            color: '#ff6f61',
+            color: '#608BC1',
                   textDecoration: 'none',
                   fontWeight: 'bold',
                   fontSize: '1.1rem',
-                  border: '2px solid #ff6f61',
+                  border: '2px solid #608BC1',
                   padding: '10px 20px',
                   borderRadius: '5px',
                   transition: 'background-color 0.3s, color 0.3s',
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.backgroundColor = '#ff6f61';
+                  e.currentTarget.style.backgroundColor = '#608BC1';
                   e.currentTarget.style.color = '#fff';
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.backgroundColor = 'transparent';
-                  e.currentTarget.style.color = '#ff6f61';
+                  e.currentTarget.style.color = '#608BC1';
                 }}
               >
                 View on GitHub

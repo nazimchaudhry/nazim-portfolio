@@ -7,6 +7,8 @@ import ContactForm from './components/ContactForm';
 import Experience from './components/Experience';
 import Skills from './components/Skills';
 import Confetti from 'react-confetti'; 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [showConfetti, setShowConfetti] = useState(true); 
@@ -34,6 +36,7 @@ function App() {
       <Projects />
       <Skills />
       <ContactForm />
+      <ToastContainer />
     </div>
   );
 }

@@ -14,11 +14,11 @@ function Header() {
     <header
     id="header"
       style={{
-        backgroundImage: "url('/images/bulb.jpg')",
+        backgroundImage: "url('/images/honeycomb-3.jpg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         height: '39vh',
-        color: '#ff6f61',
+        color: '#608BC1',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
@@ -38,9 +38,9 @@ function Header() {
             margin: '0 10px',
           }}
         >
-          😊
+          💻
         </span>
-        Mohd Asad Portfolio
+        Nazim Khan Portfolio
       </h1>
 
       {/* CSS Animation */}

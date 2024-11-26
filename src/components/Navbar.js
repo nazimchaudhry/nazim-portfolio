@@ -30,7 +30,7 @@ function Navbar() {
 }
 
 const navLinkStyle = {
-  color: '#ff6f61',
+  color: '#608BC1',
   textDecoration: 'none',
   fontSize: '1.2rem',
   fontWeight: 'bold',

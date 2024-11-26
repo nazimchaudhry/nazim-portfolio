@@ -5,13 +5,14 @@ function Experience() {
     {
       company: "Sofyrus Technologies Pvt Ltd",
       role: "Software Developer",
-      period: "Aug 2023 – Present",
+      period: "May 2023 – Present",
       highlights: [
-        "✧ Led the backend development for a Microservice & Monolithic-Oriented Medical Management System",
-        "✧ Achieving a 10x improvement in API response time.",
-        "✧ Designed and optimized CRUD APIs to streamline system interactions.",
-        "✧ Collaborated with frontend developers for integration and ensured high-quality standards with QA professionals.",
-        "✧ Developed scalable backend infrastructure for multiple projects using NestJS.",
+        "✧ Developed responsive and high-performance web applications using ReactJS, enhancing user engagement.",
+        "✧ Implemented state management with Redux, optimizing app performance and data flow.",
+        "✧ Integrated RESTful APIs and WebSocket for real-time data, improving overall app responsiveness.",
+        "✧ Built cross-platform mobile applications with React Native, reducing development time by 40%.",
+        "✧ Optimized mobile app performance through efficient use of native modules and code splitting.",
+        "✧ Delivered seamless user experiences with smooth navigation and consistent UI across iOS and Android.",
       ],
     },
   ];
@@ -58,7 +59,7 @@ function Experience() {
             fontSize: '3rem',
             fontWeight: 'bold',
             marginBottom: '40px',
-            color: '#ff6f61',
+            color: '#608BC1',
             textShadow:
               '2px 2px 5px rgba(0, 0, 0, 0.8), 3px 3px 10px rgba(255, 255, 255, 0.4)',
             fontFamily: "'Raleway', sans-serif",
@@ -84,7 +85,7 @@ function Experience() {
                 fontSize: '2rem',
                 fontWeight: 'bold',
                 marginBottom: '10px',
-                color: '#ffd700', // Golden color for the role
+                color: '#608BC1', // Golden color for the role
                 fontFamily: "'Raleway', sans-serif",
               }}
             >

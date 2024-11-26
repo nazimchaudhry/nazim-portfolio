@@ -1,6 +1,6 @@
 import React from 'react';
-import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJs, FaDocker, FaGithub, FaAws } from 'react-icons/fa';
-import { SiTypescript, SiNestjs, SiPostgresql, SiRedis, SiNginx, SiKafka, SiElasticsearch, SiPrisma, SiJira, SiFigma } from 'react-icons/si';
+import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJs, FaDocker, FaGithub,  FaAws } from 'react-icons/fa';
+import { SiTypescript, SiNestjs, SiPostgresql, SiRedis, SiNginx, SiKafka, SiElasticsearch, SiPrisma, SiJira, SiFigma, SiTailwindcss } from 'react-icons/si';
 import { motion } from 'framer-motion';
 import '../index';
 
@@ -8,17 +8,21 @@ function Skills() {
   const skills = [
     { name: 'JavaScript', icon: <FaJs />, color: '#F7DF1E' },
     { name: 'TypeScript', icon: <SiTypescript />, color: '#007ACC' },
-    { name: 'Node.js', icon: <FaNodeJs />, color: '#339933' },
-    { name: 'NestJS', icon: <SiNestjs />, color: '#E0234E' },
+    { name: 'Html', icon: <FaHtml5 />, color: '#F24E1E'},
+    { name: 'Css', icon: <FaCss3Alt />, color: '#007ACC'},
+    // { name: 'Node.js', icon: <FaNodeJs />, color: '#339933' },
+    // { name: 'NestJS', icon: <SiNestjs />, color: '#E0234E' },
     { name: 'React', icon: <FaReact />, color: '#61DAFB' },
-    { name: 'PostgreSQL', icon: <SiPostgresql />, color: '#336791' },
-    { name: 'Docker', icon: <FaDocker />, color: '#2496ED' },
-    { name: 'Redis', icon: <SiRedis />, color: '#DC382D' },
-    { name: 'Nginx', icon: <SiNginx />, color: '#009639' },
-    { name: 'AWS', icon: <FaAws />, color: '#FF9900' },
+    { name: 'React Native', icon: <FaReact />, color: '#61DAFB' },
+    // { name: 'PostgreSQL', icon: <SiPostgresql />, color: '#336791' },
+    // { name: 'Docker', icon: <FaDocker />, color: '#2496ED' },
+    // { name: 'Redis', icon: <SiRedis />, color: '#DC382D' },
+    // { name: 'Nginx', icon: <SiNginx />, color: '#009639' },
+    // { name: 'AWS', icon: <FaAws />, color: '#FF9900' },
     { name: 'GitHub', icon: <FaGithub />, color: '#181717' },
-    { name: 'Elasticsearch', icon: <SiElasticsearch />, color: '#005571' },
-    { name: 'Prisma', icon: <SiPrisma />, color: '#2D3748' },
+    // { name: 'Elasticsearch', icon: <SiElasticsearch />, color: '#005571' },
+    // { name: 'Prisma', icon: <SiPrisma />, color: '#2D3748' },
+    { name: 'Tailwind CSS', icon: <SiTailwindcss />, color: '#38BDF8' },
     { name: 'Jira', icon: <SiJira />, color: '#0052CC' },
     { name: 'Figma', icon: <SiFigma />, color: '#F24E1E' },
   ];
@@ -59,7 +63,7 @@ function Skills() {
             fontSize: '3rem',
             fontWeight: 'bold',
             marginBottom: '40px',
-            color: '#ff6f61',
+            color: '#608BC1',
             textShadow: '2px 2px 5px rgba(0, 0, 0, 0.8), 3px 3px 10px rgba(255, 255, 255, 0.4)', 
             fontFamily: "'Raleway', sans-serif",
           }}

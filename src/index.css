@@ -114,7 +114,7 @@ h2 {
 
 #contact button {
   padding: 10px 20px;
-  background-color: #ff6f61;
+  background-color: #608BC1;
   color: white;
   border: none;
   border-radius: 5px;
@@ -123,6 +123,6 @@ h2 {
 }
 
 #contact button:hover {
-  background-color: #e05549;
+  background-color: #608BC1;
 }
 
