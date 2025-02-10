@@ -9,23 +9,6 @@ function ContactForm() {
   // const [status, setStatus] = useState('');
   const [rocketAnimated, setRocketAnimated] = useState(false);
 
-  // const handleChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value });
-
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   setRocketAnimated(true);
-  //   try {
-  //     await submitContactForm(formData);
-  //     setStatus('Form submitted successfully!');
-  //     setFormData({ name: '', email: '', message: '' }); 
-  //   } catch (error) {
-  //     setStatus('Failed to submit the form. Please try again.');
-  //     console.error('Submission error:', error);
-  //   } finally {
-  //     setRocketAnimated(false); 
-  //   }
-  // };
-
   const sendEmail = (e) => {
     e.preventDefault();
     
@@ -178,87 +161,107 @@ function ContactForm() {
 
 export default ContactForm;
 
-// import React, { useRef } from "react";
+// import React, { useRef, useState } from "react";
 // import emailjs from "@emailjs/browser";
+// import { toast } from "react-toastify";
+// import "react-toastify/dist/ReactToastify.css";
 
-// const ContactForm = () => {
-//   const form = useRef();
+// const ContactForm =()=> {
+//   const form = useRef();
+//   const [rocketAnimated, setRocketAnimated] = useState(false);
 
-//   const sendEmail = (e) => {
-//     e.preventDefault();
+//   const sendEmail = (e) => {
+//     e.preventDefault();
+    
+//     setRocketAnimated(true);
+//     emailjs
+//       .sendForm(
+//         "service_entvitq",
+//         "template_xhas4qh",
+//         form.current,
+//         "g_11IuTMI8h-asr48"
+//       )
+//       .then(
+//         () => {
+//           toast.success("Email sent successfully!", {
+//             position: "top-center",
+//             autoClose: 1000,
+//           });
+//           form.current.reset();
+//           setRocketAnimated(false);
+//         },
+//         (error) => {
+//           toast.error(error.text, {
+//             position: "top-center",
+//             autoClose: 1000,
+//           });
+//           setRocketAnimated(false);
+//         }
+//       );
+//   };
 
-//     
-//     const formData = new FormData(form.current);
-//     const fromName = formData.get("from_name");
-//     const fromEmail = formData.get("from_email");
-//     formData.set("from_name", `${fromName} <${fromEmail}>`);
+//   return (
+//     <section
+//       id="contact"
+//       className="bg-cover bg-center bg-no-repeat py-12 px-4 md:px-8 lg:px-16 text-white text-center"
+//       style={{ backgroundImage: "url('/images/key-1.jpg')" }}
+//     >
+//       <h2 className="text-3xl md:text-4xl font-bold mb-6 text-blue-400 drop-shadow-lg font-raleway">
+//         Contact Me
+//       </h2>
 
-//     emailjs
-//       .sendForm(
-//         "service_8khrh7q", 
-//         "template_0tip5gy", 
-//         form.current,
-//         "ftj7l61wGTTjuB3vJ" 
-//       )
-//       .then(
-//         () => {
-//           console.log("Email sent successfully!");
-//           form.current.reset();
-//         },
-//         (error) => {
-//           console.log("Failed to send email:", error.text);
-//         }
-//       );
-//   };
+//       <form
+//         ref={form}
+//         onSubmit={sendEmail}
+//         className="flex flex-col gap-4 max-w-md mx-auto"
+//       >
+//         <input
+//           type="text"
+//           placeholder="Name"
+//           name="from_name"
+//           required
+//           className="p-3 text-black rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+//         />
+//         <input
+//           type="email"
+//           placeholder="Email"
+//           name="to_name"
+//           required
+//           className="p-3 text-black rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+//         />
+//         <textarea
+//           placeholder="Message"
+//           name="message"
+//           rows="4"
+//           required
+//           className="p-3 text-black rounded-md border border-gray-300 resize-none focus:outline-none focus:ring-2 focus:ring-blue-400"
+//         ></textarea>
+//         <button
+//           type="submit"
+//           disabled={rocketAnimated}
+//           className={`bg-blue-500 text-white p-3 rounded-lg shadow-md transition-all duration-300 ${rocketAnimated ? "opacity-50 cursor-not-allowed" : "hover:bg-blue-600"}`}
+//         >
+//           Submit
+//           {rocketAnimated && (
+//             <span className="absolute right-4 animate-moveRocket">🛫</span>
+//           )}
+//         </button>
+//       </form>
 
-//   return (
-//     <section
-//       className="p-8"
-//       id="contact_form"
-//       style={{
-//         backgroundImage: "url('/images/background.jpg')", 
-//         backgroundSize: "cover",
-//         backgroundPosition: "center",
-//         backgroundRepeat: "no-repeat",
-//       }}
-//     >
-//       <form
-//         ref={form}
-//         onSubmit={sendEmail}
-//         className="bg-white bg-opacity-90 p-6 rounded-lg shadow-lg max-w-md mx-auto"
-//       >
-//         <h2 className="text-2xl font-bold mb-4 text-center text-blue-600">
-//           Contact Me
-//         </h2>
-//         <div className="flex flex-col gap-4">
-//           <input
-//             className="rounded-lg p-2 text-center border border-gray-300"
-//             type="text"
-//             placeholder="Name"
-//             name="from_name"
-//             required
-//           />
-//           <input
-//             className="rounded-lg p-2 text-center border border-gray-300"
-//             type="email"
-//             placeholder="Email"
-//             name="to_name"
-//             required
-//           />
-//           <textarea
-//             className="rounded-lg p-2 text-center border border-gray-300"
-//             placeholder="Message"
-//             name="message"
-//             rows="4"
-//             required
-//           ></textarea>
-//           <button className="bg-blue-600 text-white py-2 px-4 rounded-full hover:bg-blue-700 transition">
-//             Submit
-//           </button>
-//         </div>
-//       </form>
-//     </section>
-//   );
-// };
+//       <style>
+//         {`
+//           @keyframes moveRocket {
+//             0% { transform: translateX(0); opacity: 1; }
+//             100% { transform: translateX(120%); opacity: 0; }
+//           }
+//           .animate-moveRocket {
+//             animation: moveRocket 2s ease-in-out forwards;
+//           }
+//         `}
+//       </style>
+//     </section>
+//   );
+// }
 
 // export default ContactForm;
+
