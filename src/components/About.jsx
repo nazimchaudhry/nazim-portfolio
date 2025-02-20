@@ -20,7 +20,7 @@ const About =()=> {
 
         <div className="text-lg md:text-xl mt-5 max-w-3xl mx-auto leading-relaxed font-roboto">
           <p>
-            Hi! I'm Nazim Khan, a Software Developer with expertise in JavaScript, TypeScript, ReactJs, React Native, and REST APIs.
+            Hi! I'm Nazim Khan, a Front-End Developer with expertise in JavaScript, TypeScript, ReactJs, React Native, and REST APIs.
           </p>
           <p className="mt-3">
             I have 2 years of experience in frontend development.
@@ -35,7 +35,7 @@ const About =()=> {
           className="mt-8 px-6 py-3 text-lg bg-[#608BC1] text-white rounded-md shadow-md transition-transform duration-200 hover:bg-[#133E87] hover:scale-105"
           onClick={() =>
             window.open(
-              'https://drive.google.com/file/d/1yiU_e-e2MlsMpCHtVhnoDf9hV7FOtAfZ/view?usp=drivesdk',
+              'https://drive.google.com/file/d/1Sw4cWHf_3wuW4SLvjSnMW41TXPXUJHLF/view?usp=drivesdk',
               '_blank'
             )
           }

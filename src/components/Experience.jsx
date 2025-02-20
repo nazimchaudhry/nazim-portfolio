@@ -4,7 +4,7 @@ const Experience = () => {
   const experiences = [
     {
       company: "Sofyrus Technologies Pvt Ltd",
-      role: "Software Developer",
+      role: "Front-End Developer",
       highlights: [
         "✧ Developed responsive and high-performance web applications using ReactJS, enhancing user engagement.",
         "✧ Implemented state management with Redux, optimizing app performance and data flow.",

@@ -76,10 +76,16 @@ h2 {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-#projects h3 {
+/* #projects h3 {
   margin: 0;
   color: #ff6f61;
-}
+} */
+#projects h3.project-heading {
+  margin: 0;
+  background-image: linear-gradient(to right, #3b82f6, #9333ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} 
 
 #projects a {
   color: #007bff;

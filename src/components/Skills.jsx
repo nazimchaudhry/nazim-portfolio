@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJs, FaGithub } from 'react-icons/fa';
-import { SiTypescript, SiJira, SiFigma, SiTailwindcss } from 'react-icons/si';
+import { SiTypescript, SiRedux, SiJira, SiFigma, SiTailwindcss } from 'react-icons/si';
 import { motion } from 'framer-motion';
 
 const Skills =()=> {
@@ -15,6 +15,7 @@ const Skills =()=> {
     { name: 'Tailwind CSS', icon: <SiTailwindcss />, color: '#38BDF8' },
     { name: 'Jira', icon: <SiJira />, color: '#0052CC' },
     { name: 'Figma', icon: <SiFigma />, color: '#F24E1E' },
+    { name: 'Redux Toolkit', icon: <SiRedux />, color: '#764ABC' },
   ];
 
   return (
