@@ -225,27 +225,20 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="relative bg-gray-900 text-white py-16 px-6 max-w-[2800px] mx-auto"
+      className="relative bg-gray-900 text-white py-16 px-4 sm:px-6 max-w-[2800px] mx-auto"
     >
       <div className="relative max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-8 sm:mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
           Featured Projects
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-10">
           {projectList.map((project, index) => (
             <div
               key={index}
-              className="group relative rounded-2xl overflow-hidden shadow-xl transform transition-all duration-500 hover:scale-105 hover:shadow-2xl bg-gray-800"
+              className="group relative rounded-2xl overflow-hidden shadow-lg sm:shadow-xl transform transition-all duration-500 hover:scale-105 hover:shadow-2xl bg-gray-800"
             >
-              {/* <div className="relative h-60 overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.name}
-                  className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
-                />
-              </div> */}
-              <div className="relative w-full h-60">
+              <div className="relative w-full h-48 sm:h-60">
                 <img
                   src={project.image}
                   alt={project.name}
@@ -253,16 +246,16 @@ const Projects = () => {
                 />
               </div>
 
-              <div className="p-6 flex flex-col justify-between h-60">
-                <h3 className="text-2xl font-bold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
+              <div className="p-4 sm:p-6 flex flex-col justify-between h-auto sm:h-60">
+                <h3 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-3 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
                   {project.name}
                 </h3>
 
-                <p className="text-gray-400 text-sm mb-4 leading-relaxed">
+                <p className="text-gray-400 text-sm mb-3 sm:mb-4 leading-relaxed">
                   {project.description}
                 </p>
 
-                <div className="flex flex-wrap gap-2 mb-4">
+                <div className="flex flex-wrap gap-2 mb-3 sm:mb-4">
                   {project.tags.map((tag, idx) => (
                     <span
                       key={idx}
@@ -278,7 +271,7 @@ const Projects = () => {
                     <Star className="w-4 h-4 fill-yellow-400 text-yellow-400 mr-1" />
                     <span className="text-sm">{project.stars}</span>
                   </div>
-                  <div className="flex space-x-4">
+                  <div className="flex space-x-3 sm:space-x-4">
                     <a
                       href={project.gitHublink}
                       target="_blank"
@@ -304,8 +297,8 @@ const Projects = () => {
           ))}
         </div>
 
-        <div className="flex justify-center mt-12">
-          <button className="relative overflow-hidden px-8 py-3 rounded-full bg-transparent border border-blue-500 text-blue-400 font-medium group">
+        <div className="flex justify-center mt-8 sm:mt-12">
+          <button className="relative overflow-hidden px-6 py-2 sm:px-8 sm:py-3 rounded-full bg-transparent border border-blue-500 text-blue-400 font-medium group">
             <span className="relative z-10 group-hover:text-white transition-colors duration-300">
               View All Projects
             </span>
@@ -315,6 +308,7 @@ const Projects = () => {
       </div>
     </section>
   );
+
 };
 
 export default Projects;
